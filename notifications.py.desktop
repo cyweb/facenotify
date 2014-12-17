@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Exec=python3 /home/your_username/facenotify/notifications.py
+Hidden=false
+NoDisplay=false
+X-GNOME-Autostart-enabled=true
+Name[tr_TR]=facenotify
+Name=facenotify
+Comment[tr_TR]=
+Comment=
