@@ -3,7 +3,7 @@ facenotify
 
 
 
-[facebook notify](http://www.youtube.com/watch?v=qNkOQW3JYYU)
+[facebook notify review](http://www.youtube.com/watch?v=qNkOQW3JYYU)
 
 How to Work
 ===========
