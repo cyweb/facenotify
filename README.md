@@ -8,7 +8,7 @@ facenotify
 How to Work
 ===========
 
-1- Fisrt you need to install [notify2](https://bitbucket.org/takluyver/pynotify2) python3 package
+1- First you need to install [notify2](https://bitbucket.org/takluyver/pynotify2) python3 package
 
 2- Click [Facebook Notification](https://www.facebook.com/notifications) and copy RSS link, paste it file as "id" 
 something like -> "https://www.facebook.com/feeds/notifications.php?id=**************&viewer=**************&key=**************&format=rss20" 
