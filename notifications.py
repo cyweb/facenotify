@@ -37,8 +37,11 @@ def compare(link,title):
         noti(title,link)
 def loop():
     while True:
-        rss()
-        time.sleep(10)
+        try:
+            rss()
+            time.sleep(5)
+        except:
+            time.sleep(10)
 if __name__ == '__main__':
     global n
     global current
