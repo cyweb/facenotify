@@ -10,7 +10,7 @@ class xmlfacebook:
         titles = re.findall(r"<title>(.*?)</title>",response)
         links = re.findall(r"<link>(.*?)</link>",response)
         date = re.findall(r"<pubDate>(.*?)</pubDate>",response)
-        self.date=date[1]
+        self.date=date[0]
         self.link = links[1].replace("&amp;","&")
         self.title = re.sub("<!\[CDATA\[(.*?)\]\]>|<.*?>", lambda m: m.group(1) or '', titles[1], flags=re.DOTALL)
     def get_title(self):
