@@ -22,17 +22,18 @@ def rss():
     x=facebookrss.xmlfacebook(identifity)
     title=x.get_title() # find last notification title
     link=x.get_link()   # find last notification facebook url
-    compare(link,title) #check sent notification before !!!!
-def compare(link,title):
+    date=x.get_date()   # find date
+    compare(date,link,title) # check sent notification before !!!!
+def compare(date,link,title):
     if os.path.isfile(current+"/last"):
         f=open(current+"/last", "r")
         last=f.readline()
         f.close()
     else:
         last="*"
-    if link!=last:
+    if date!=last:
         f=open(current+"/last", "w")
-        f.write(link)
+        f.write(date)
         f.close()
         noti(title,link)
 def loop():
