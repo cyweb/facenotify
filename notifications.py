@@ -32,10 +32,10 @@ def compare(date,link,title):
     else:
         last="*"
     if date!=last:
+        noti(title,link)
         f=open(current+"/last", "w")
         f.write(date)
         f.close()
-        noti(title,link)
 def loop():
     while True:
         try:
